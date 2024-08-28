@@ -1,7 +1,8 @@
 package ru.netology;
 
+// Single Responsibility Principle (Принцип единственной ответственности) - класс Purchase удовлетворяет этому принципу т.к.отвечает только за покупку, цену и стоимостью, занимается покупкой и ничего больше не знает.
 public class Purchase {
-    private String title;
+    private String title; //  Open-Closed Principle (Принцип открытости-закрытости) - получение данных через геттеры и сетттеры
     private int count;
     private int price;
 
@@ -19,7 +20,7 @@ public class Purchase {
     }
 
     public void setCount(int count) {
-         this.count += count;
+        this.count += count;
     }
 
     public int getPrice() {
